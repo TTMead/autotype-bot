@@ -8,5 +8,5 @@ pip install keyboard
 ```
 
 ## Contact
-Timothy Mead (timothy.mead20@gmail.com)
+Timothy Mead (timothy.mead20@gmail.com)  
 Francisco Jorquera (ejorquera2051@gmail.com)
