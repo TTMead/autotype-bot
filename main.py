@@ -19,6 +19,10 @@ root.withdraw()
 text_to_write = simpledialog.askstring(title="Prompt",
                                   prompt="What text would you like to write?:")
 
+# Cut string if too long
+max_text_length = 20
+text_to_write = text_to_write[:max_text_length] if len(text_to_write) > max_text_length else text_to_write
+
 # Delay before starting loop
 time.sleep(3)
 
