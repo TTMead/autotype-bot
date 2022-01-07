@@ -9,6 +9,6 @@ keyboard.add_hotkey('q',quit)
 time.sleep(3)
 
 while running:
-    keyboard.write("sugondese\n",delay=0)
+    keyboard.write("Ganesh's Favourite word\n",delay=0)
     time.sleep(0.1)
 
