@@ -1,1 +1,8 @@
+# Ignore python environments
 env
+__pycache__
+
+# Ignore build files
+build
+dist
+*.spec
