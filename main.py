@@ -9,7 +9,7 @@ running = True
 def quit():
     global running
     running = False
-keyboard.add_hotkey('q',quit)
+keyboard.add_hotkey('esc',quit)
 
 # Setup tkinter root process
 root = tk.Tk()
