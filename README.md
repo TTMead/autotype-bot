@@ -1,5 +1,5 @@
-# autotype-bot
-A bot for typing things
+# Autotype Bot
+A bot for typing things.
 
 ## Environment
 This runs in a python environment with the following pip installs:
