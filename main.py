@@ -9,6 +9,7 @@ running = True
 def quit():
     global running
     running = False
+    print("Terminating Program")
 keyboard.add_hotkey('esc',quit)
 
 # Setup tkinter root process
@@ -19,14 +20,15 @@ root.withdraw()
 text_to_write = simpledialog.askstring(title="Prompt",
                                   prompt="What text would you like to write?:")
 
-# Cut string if too long
-max_text_length = 20
-text_to_write = text_to_write[:max_text_length] if len(text_to_write) > max_text_length else text_to_write
-
 # Delay before starting loop
 time.sleep(3)
 
 # Typing loop
 while running:
-    keyboard.write(text_to_write + "\n", delay=0)
-    time.sleep(0.1)
+    for character in text_to_write:
+        keyboard.write(character, delay=0.0001)
+        if not running:
+            break
+    
+    # Write a new line
+    keyboard.write("\n", delay=0)
